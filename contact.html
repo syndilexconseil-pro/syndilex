@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SYNDILEX</title>
+<meta name="description" content="Contactez SYNDILEX pour exposer votre situation : relations sociales, CSE, démarches de salarié, démarches administratives, automobile, internet, retraite.">
+<link rel="canonical" href="https://syndilex.fr/contact.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SYNDILEX">
+<meta property="og:title" content="Contact — SYNDILEX">
+<meta property="og:description" content="Contactez SYNDILEX pour exposer votre situation : relations sociales, CSE, démarches de salarié, démarches administratives, automobile, internet, retraite.">
+<meta property="og:url" content="https://syndilex.fr/contact.html">
+<meta name="theme-color" content="#16283F">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2316283F%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 font-family=%22Georgia,serif%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-name">SYNDILEX</span>
+      <span class="brand-tag">CONSEIL &bull; ACCOMPAGNEMENT &bull; ASSISTANCE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="employeurs.html">Employeurs</a></li>
+        <li><a href="salaries.html">Salariés</a></li>
+        <li><a href="representants.html">Représentants du personnel</a></li>
+        <li><a href="particuliers.html">Particuliers</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary btn-contact-header" href="contact.html">Contacter SYNDILEX</a>
+    </nav>
+  </div>
+</header>
+<div class="nav-backdrop"></div>
+<main id="main">
+<section class="section--navy section--tight">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--blue-light);">Contact</span>
+    <h1>Nous contacter</h1>
+    <p class="lede">Décrivez votre situation : nous revenons vers vous pour identifier l'accompagnement le plus adapté.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <form id="contact-form" novalidate action="https://formsubmit.co/syndilex.conseil@gmail.com" method="POST">
+
+          <!-- Configuration du service d'envoi (FormSubmit) : aucun backend à héberger.
+               L'adresse d'envoi réelle est fixée dynamiquement depuis js/config.js.
+               Le champ "email" ci-dessous doit garder ce nom exact : FormSubmit
+               l'utilise automatiquement comme adresse de réponse (_replyto),
+               afin qu'une réponse directe à l'e-mail reçu parte vers le visiteur. -->
+          <input type="hidden" name="_subject" value="Nouvelle demande de contact — site SYNDILEX">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_honey" id="site_web_fs" style="display:none">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom / Prénom *</label>
+              <input type="text" id="nom" name="Nom / Prénom" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone <span class="hint">(facultatif)</span></label>
+            <input type="tel" id="telephone" name="Téléphone" autocomplete="tel">
+          </div>
+
+          <fieldset>
+            <legend>Vous êtes *</legend>
+            <div class="radio-grid">
+              <label><input type="radio" name="Profil" value="Employeur" required> Employeur</label>
+              <label><input type="radio" name="Profil" value="Salarié"> Salarié</label>
+              <label><input type="radio" name="Profil" value="Représentant du personnel"> Représentant du personnel</label>
+              <label><input type="radio" name="Profil" value="Particulier"> Particulier</label>
+              <label><input type="radio" name="Profil" value="Autre"> Autre</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="sujet">Votre demande concerne *</label>
+            <select id="sujet" name="Sujet" required>
+              <option value="">— Sélectionnez —</option>
+              <option>Relations sociales</option>
+              <option>CSE</option>
+              <option>Salarié</option>
+              <option>Démarche administrative</option>
+              <option>Automobile</option>
+              <option>Internet / Téléphonie</option>
+              <option>Retraite</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Votre message *</label>
+            <textarea id="message" name="Message" required></textarea>
+          </div>
+
+          <div class="notice notice--muted" style="margin:20px 0;">
+            <p>Ne transmettez pas de documents contenant des données sensibles lors du premier contact. SYNDILEX vous indiquera, si nécessaire, le moyen approprié pour transmettre les documents utiles à votre dossier.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="piece-jointe">Pièce jointe <span class="hint">(facultatif — évitez les documents contenant des données sensibles)</span></label>
+            <input type="file" id="piece-jointe" name="Pièce jointe">
+          </div>
+
+          <div class="form-group">
+            <label id="captcha-question" for="captcha-response">Vérification *</label>
+            <input type="text" id="captcha-response" name="captcha_response" required inputmode="numeric" autocomplete="off">
+          </div>
+
+          <!-- Champ honeypot invisible : piège anti-robots -->
+          <div class="honeypot" aria-hidden="true">
+            <label for="site_web">Site web</label>
+            <input type="text" id="site_web" name="site_web" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="consent-row">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">J'accepte que les informations saisies dans ce formulaire soient utilisées par SYNDILEX pour traiter ma demande. *</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
+
+          <div class="form-status" id="form-status" role="status"></div>
+
+          <div class="notice notice--muted" style="margin-top:24px;">
+            <p><strong>Utilisation de vos données :</strong> les informations saisies ci-dessus sont utilisées uniquement pour traiter votre demande et vous répondre ; elles sont transmises par le formulaire à SYNDILEX (Patrick Bergamini), seul destinataire, via le service d'envoi FormSubmit qui ne fait que relayer le message par e-mail. Elles ne sont ni cédées ni utilisées à des fins commerciales. Elles sont conservées le temps nécessaire au traitement de votre demande. Vous disposez d'un droit d'accès, de rectification et d'effacement de ces données : pour l'exercer, écrivez à <a href="mailto:syndilex.conseil@gmail.com" data-coord="email-link">syndilex.conseil@gmail.com</a>. Détails complets dans notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-aside">
+        <div class="aside-block">
+          <h3>Nous joindre directement</h3>
+          <p style="color:var(--gray);font-size:.94rem;">Vous préférez écrire ou téléphoner directement ?</p>
+          <a class="btn btn-ghost btn-block" href="mailto:syndilex.conseil@gmail.com" data-coord="email-link">Écrire un e-mail</a>
+          <a class="btn btn-ghost btn-block" href="tel:+33683273695" data-coord="phone-full" style="margin-top:10px;">06 83 27 36 95</a>
+        </div>
+        <div class="aside-block">
+          <h3>Délai de réponse</h3>
+          <p style="color:var(--gray);font-size:.94rem;">SYNDILEX revient vers vous dans les meilleurs délais afin d'identifier l'accompagnement le plus adapté à votre situation.</p>
+        </div>
+        <div class="aside-block">
+          <h3>Vos données</h3>
+          <p style="color:var(--gray);font-size:.94rem;">Les informations recueillies via ce formulaire sont utilisées uniquement pour traiter votre demande. Pour en savoir plus sur leur utilisation et vos droits, consultez notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<div class="notice notice--muted" style="max-width:1140px;margin:0 auto 40px;">
+  <p>Si le formulaire ne fonctionne pas : écrivez directement à <a href="mailto:syndilex.conseil@gmail.com" data-coord="email-link">syndilex.conseil@gmail.com</a> ou appelez le <a href="tel:+33683273695" data-coord="phone-full">06 83 27 36 95</a>.</p>
+</div>
+</main><footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">SYNDILEX</span>
+        <p>Conseil, accompagnement et assistance en relations sociales, et aide aux démarches et à la constitution de dossiers pour les particuliers.</p>
+      </div>
+      <div>
+        <h4>ACCÈS RAPIDE</h4>
+        <ul>
+          <li><a href="employeurs.html">Employeurs</a></li>
+          <li><a href="salaries.html">Salariés</a></li>
+          <li><a href="representants.html">Représentants du personnel</a></li>
+          <li><a href="particuliers.html">Particuliers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>SYNDILEX</h4>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:syndilex.conseil@gmail.com" data-coord="email-link">Écrire un e-mail</a></li>
+          <li><a href="tel:+33683273695" data-coord="phone-full">06 83 27 36 95</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> SYNDILEX — Patrick Bergamini, entrepreneur individuel</span>
+      <span>
+        <a href="mentions-legales.html">Mentions légales</a> ·
+        <a href="confidentialite.html">Politique de confidentialité</a> ·
+        <a href="cookies.html">Gestion des cookies</a> ·
+        <a href="contact.html">Contact</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Gestion des cookies">
+  <p>Ce site utilise uniquement des cookies nécessaires à son fonctionnement. Aucun cookie de mesure d'audience ou publicitaire n'est déposé sans votre accord. En savoir plus dans notre <a href="cookies.html">gestion des cookies</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookie-accept" type="button">Accepter</button>
+    <button class="btn btn-ghost" id="cookie-refuse" type="button">Refuser</button>
+  </div>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

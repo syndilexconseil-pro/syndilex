@@ -1,0 +1,10 @@
+# Configuration SYNDILEX — à compléter avant mise en ligne
+# (ne jamais laisser d'adresse e-mail fictive dans le code final)
+#
+# Ces valeurs sont dupliquées dans js/config.js : c'est CE fichier
+# (js/config.js) qui doit être modifié si l'e-mail ou le téléphone
+# changent un jour — voir EDITION-GUIDE.md.
+
+EMAIL_SYNDILEX = syndilex.conseil@gmail.com
+TELEPHONE      = 06 83 27 36 95
+SITE           = https://syndilex.fr
