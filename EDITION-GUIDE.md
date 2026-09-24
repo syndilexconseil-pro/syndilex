@@ -65,20 +65,19 @@ l'e-mail, il est recommandé de mettre aussi à jour cette ligne dans
 
 ## 3. Modifier une image ou le logo
 
-Le site n'utilise actuellement aucune photo (choix volontaire, pour rester
-sobre et éviter les images génériques). L'identité SYNDILEX est composée en
-texte stylisé dans l'en-tête (police et couleurs définies dans
-`css/style.css`).
+Le logo officiel SYNDILEX (avec la mention « Conseil • Accompagnement •
+Assistance ») est intégré au site dans `images/logo-syndilex.png` et
+s'affiche dans l'en-tête et le pied de page de chaque page.
 
-Si vous disposez d'un fichier logo (SVG ou PNG, fond transparent de
-préférence) :
-1. Dans le dépôt, ouvrez le dossier (ou créez-le) `images/`, puis
-   **Add file → Upload files**, et déposez votre logo (ex. `logo.svg`).
-2. Dites-moi quand c'est fait : je vous indiquerai la ligne exacte à coller
-   dans l'en-tête (`<img src="images/logo.svg" alt="SYNDILEX — Conseil,
-   accompagnement, assistance">`) pour remplacer le texte actuel — ou vous
-   pouvez le faire vous-même en remplaçant le bloc `<span class="brand-name">`
-   dans le fichier concerné.
+Pour le remplacer par une nouvelle version plus tard :
+1. Dans le dépôt, ouvrez le dossier `images/`, cliquez sur `logo-syndilex.png`.
+2. Cliquez sur l'icône crayon, puis en général il faudra plutôt utiliser
+   **Add file → Upload files** et déposer le nouveau fichier avec **le même
+   nom** (`logo-syndilex.png`) pour qu'il remplace automatiquement l'ancien
+   partout sur le site, sans toucher au code.
+3. Si le nouveau fichier a un nom différent, dites-le-moi ou modifiez vous-
+   même la ligne `<img src="images/logo-syndilex.png" ...>` dans l'en-tête
+   (`<header>`) et le pied de page (`<footer>`) de chaque fichier `.html`.
 
 Pour ajouter une photo ailleurs sur le site, la méthode est la même : déposer
 le fichier dans `images/`, puis ajouter une balise `<img src="images/mon-
