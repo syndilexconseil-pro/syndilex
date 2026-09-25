@@ -11,7 +11,7 @@
    coordonnées, aucune information sensible ni mot de passe.
    ========================================================= */
 window.SYNDILEX_CONTACT = {
-  email: "syndilex.conseil@gmail.com",
+  email: "contact@syndilex.fr",
   phoneDisplay: "06 83 27 36 95",
   phoneHref: "+33683273695",
   site: "https://syndilex.fr"
