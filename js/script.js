@@ -9,9 +9,10 @@
 
   /* ---------- Coordonnées : source unique (js/config.js) ---------- */
   var C = window.SYNDILEX_CONTACT || {
-    email: "syndilex.conseil@gmail.com",
+    email: "contact@syndilex.fr",
     phoneDisplay: "06 83 27 36 95",
     phoneHref: "+33683273695",
+    phoneEnabled: false,
     site: "https://syndilex.fr"
   };
 
@@ -24,6 +25,15 @@
     if (kind === "phone-text") { el.textContent = C.phoneDisplay; }
     if (kind === "site-text") { el.textContent = C.site.replace(/^https?:\/\//, ""); }
   });
+
+  // Le téléphone n'est affiché que si explicitement activé dans js/config.js
+  // (phoneEnabled: true). Par défaut, ces blocs restent masqués : SYNDILEX
+  // se présente avec l'e-mail comme moyen de contact principal.
+  if (C.phoneEnabled) {
+    document.querySelectorAll('[data-coord-toggle="phone"]').forEach(function (el) {
+      el.style.display = "";
+    });
+  }
 
   /* ---------- Menu mobile ---------- */
   var toggle = document.querySelector(".nav-toggle");
@@ -117,12 +127,13 @@
         Envoi réel du formulaire via FormSubmit (https://formsubmit.co) :
         service gratuit qui transmet le contenu du formulaire par e-mail,
         sans nécessiter de serveur ni d'API key. L'adresse cible est celle
-        indiquée dans l'attribut action du formulaire (syndilex.conseil@gmail.com).
+        définie dans js/config.js (contact@syndilex.fr).
 
         Important : lors du tout premier envoi depuis ce site, FormSubmit
-        adresse un e-mail de confirmation à syndilex.conseil@gmail.com ;
-        il faut cliquer une seule fois sur le lien d'activation reçu pour
-        que les envois suivants arrivent automatiquement en boîte de réception.
+        adresse un e-mail de confirmation à cette adresse ; il faut cliquer
+        une seule fois sur le lien d'activation reçu pour que les envois
+        suivants arrivent automatiquement en boîte de réception. Cette
+        adresse doit donc être une boîte mail réellement active.
       */
       var submitBtn = form.querySelector('button[type="submit"]');
       if (submitBtn) submitBtn.disabled = true;
@@ -144,10 +155,13 @@
         })
         .catch(function () {
           statusBox.className = "form-status is-error";
-          statusBox.innerHTML =
+          var msg =
             "L'envoi automatique a échoué. Merci de nous écrire directement à " +
-            '<a href="mailto:' + C.email + '">' + C.email + "</a> " +
-            'ou par téléphone au <a href="tel:' + C.phoneHref + '">' + C.phoneDisplay + "</a>.";
+            '<a href="mailto:' + C.email + '">' + C.email + "</a>";
+          if (C.phoneEnabled) {
+            msg += ' ou par téléphone au <a href="tel:' + C.phoneHref + '">' + C.phoneDisplay + "</a>";
+          }
+          statusBox.innerHTML = msg + ".";
           statusBox.setAttribute("tabindex", "-1");
           statusBox.focus();
         })

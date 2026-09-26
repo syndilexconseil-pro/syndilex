@@ -84,12 +84,27 @@ vérifiée.**
 
 ## Étape 7 — Activer le formulaire de contact (FormSubmit)
 
+**Prérequis indispensable :** `contact@syndilex.fr` doit être une boîte mail
+réellement active (pas seulement un nom de domaine réservé). Deux façons
+d'obtenir cette boîte, gratuitement ou à faible coût :
+- **Redirection e-mail gratuite** : la plupart des registrars (OVHcloud,
+  Gandi...) offrent une ou plusieurs redirections e-mail gratuites avec le
+  domaine — `contact@syndilex.fr` peut ainsi rediriger vers une boîte que
+  vous consultez déjà (Gmail, etc.), sans coût supplémentaire.
+- **Boîte mail complète** chez votre registrar ou un fournisseur dédié, en
+  général quelques euros par mois, si vous voulez aussi pouvoir envoyer des
+  e-mails depuis cette adresse.
+
+Tant que `contact@syndilex.fr` n'est pas une boîte active, le formulaire de
+contact ne pourra pas être confirmé par FormSubmit (voir ci-dessous) et ne
+fonctionnera donc pas.
+
 Lors du tout premier envoi réel depuis `https://syndilex.fr/contact.html`,
-FormSubmit envoie un e-mail de confirmation à `syndilex.conseil@gmail.com`
-(objet proche de « Please confirm your email »). Ouvrez cet e-mail et
-cliquez une seule fois sur le lien de confirmation. Ensuite, toutes les
-demandes du formulaire arrivent automatiquement dans cette boîte, sans
-action supplémentaire.
+FormSubmit envoie un e-mail de confirmation à `contact@syndilex.fr` (objet
+proche de « Please confirm your email »). Ouvrez cet e-mail et cliquez une
+seule fois sur le lien de confirmation. Ensuite, toutes les demandes du
+formulaire arrivent automatiquement dans cette boîte, sans action
+supplémentaire.
 
 ## Récapitulatif de ce que vous obtenez, gratuitement
 

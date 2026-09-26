@@ -35,7 +35,7 @@ config.example.txt                     Récapitulatif des coordonnées (miroir l
 - Exploitant : Patrick BERGAMINI, entrepreneur individuel
 - SIREN : 940 742 208 — SIRET : 940 742 208 00017
 - Adresse : 29 Bis rue de la République, 59269 ARTRES, France
-- E-mail : syndilex.conseil@gmail.com — Téléphone : 06 83 27 36 95
+- E-mail : contact@syndilex.fr — Téléphone : 06 83 27 36 95
 - Site : https://syndilex.fr
 
 Toutes ces informations figurent dans `mentions-legales.html`. Pour modifier
@@ -45,7 +45,7 @@ l'e-mail ou le téléphone partout sur le site en une seule fois, voir
 ## Formulaire de contact
 
 Relié à [FormSubmit](https://formsubmit.co) : envoie chaque demande à
-`syndilex.conseil@gmail.com`, sans backend à héberger. Le champ e-mail du
+`contact@syndilex.fr`, sans backend à héberger. Le champ e-mail du
 formulaire est nommé `email` pour que FormSubmit configure automatiquement
 la réponse directe (`_replyto`) vers l'expéditeur.
 

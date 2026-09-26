@@ -38,24 +38,30 @@ des charges initial). Pour en ajouter un, insérez simplement une phrase ou un
 `<p>` à l'endroit voulu, par exemple dans une carte de prestation :
 `<p>À partir de 90 € HT</p>`.
 
-## 2. Modifier l'e-mail ou le téléphone (un seul endroit)
+## 2. Modifier l'e-mail (un seul endroit) / réactiver le téléphone
 
 Toutes les coordonnées affichées sur le site (pied de page, page Contact,
 mentions légales, adresse de réception du formulaire) proviennent d'un seul
 fichier : **`js/config.js`**.
 
 1. Ouvrez `js/config.js` sur github.com et cliquez sur le crayon.
-2. Modifiez uniquement les valeurs entre guillemets :
+2. Modifiez les valeurs entre guillemets :
    ```js
    window.SYNDILEX_CONTACT = {
-     email: "syndilex.conseil@gmail.com",
+     email: "contact@syndilex.fr",
      phoneDisplay: "06 83 27 36 95",
      phoneHref: "+33683273695",
+     phoneEnabled: false,
      site: "https://syndilex.fr"
    };
    ```
-3. Commit changes. Toutes les pages affichent désormais la nouvelle
-   coordonnée, y compris l'adresse de réception du formulaire de contact.
+3. Commit changes. Toutes les pages affichent désormais la nouvelle valeur,
+   y compris l'adresse de réception du formulaire de contact.
+
+Le téléphone est masqué par défaut sur tout le site (SYNDILEX se présente
+avec l'e-mail comme contact principal). Pour le réafficher sur la page
+Contact, passez simplement `phoneEnabled` à `true` — aucune autre
+modification n'est nécessaire.
 
 Exception : le champ `action` du formulaire, tout en haut de `contact.html`
 (`action="https://formsubmit.co/..."`), garde l'ancienne adresse en secours
